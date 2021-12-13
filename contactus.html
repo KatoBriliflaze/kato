@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+        <title>petBAST</title>
+        <link rel="icon" href="paws.ico?v=2" type="image/x-icon">
+        <link rel = "stylesheet" href="contactus.css"> 
+    <body>
+        <header>
+            <a href="home.html"><img src="/images/petbastlogo.png" alt="petBast Logo" width="341" height="205"></a>
+        </header>
+        <nav class="sticky">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="breeds.html">Breeds</a>
+                    <div class="dropdownContent">
+                        <a href="cat.html">Cat Breeds</a>
+                        <a href="dog.html">Dog Breeds</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="catsordogs.html">Cats or Dogs</a>
+                    <div class="dropdownContent">
+                        <a href="learncats.html">Learn Cats</a>
+                        <a href="learndogs.html">Learn Dogs</a>
+                    </div>
+                </li>
+                <li><a href="adoption.html">Adoption</a></li>
+                <li><a href="shelters.html">Shelters</a></li>
+                <li><a class="active" href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <br>
+        <main>
+            <div id="text">
+                Any Questions? <br>
+                Need Help? <br>
+                Don't Hesitate to reach out to us!
+            </div>
+            <br>
+            <h3>Get to us</h3>
+            <p>To get more information about pet adoption, pets care, <br>
+                or any relevant enquiries, feel free to contact us!</p>
+            <br>
+            <img class="picture" src="/images/contactus/catdogpic1.jpeg" alt="Cat and Dog Picture">
+            <p>
+                Find Us :<br>
+                2021/09 FCP1202 Group 8<br>
+                Tunku Abdul Rahman university College <br>
+                KL Main Campus<br>
+                Jalan Genting Kelang, Setapak,<br>
+                53300 Kuala Lumpur,<br>
+                P.O. Box 10979, 50932 Kuala Lumpur, Malaysia.<br>
+            </p>
+            <div>
+                <h4>By Phone:</h4>
+                <a class="button1" href="tel:0123456789">Call us at +60(123456789)</a>
+                <h4>By Email:</h4>
+                <a class="button1" href="mailto:contact.petbast@gmail.com" target="_blank">contact.petbast@gmail.com</a>
+            </div>
+            <br><br><br>
+            <hr>
+            <div>
+                <h4>Contact us Form</h4>
+            </div>
+            <br>
+            <div class="form box">
+                <form action="/action_page.php">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required><br><br>
+                    <label for="email">Enter your email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required><br><br>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Leave a message to us!" style="height: 200px;" required></textarea><br><br>
+                    <!--<input type="submit" value="Submit"> Supposingly should be this submit line, as we are not doing the /actionpage.php, we will replace 
+                        this submit button with a normal button which leads to a simple "Thank You Message" -->
+                </form>
+                <a class="button1" href="thankyou.html" target="_blank">Submit</a>
+            </div>
+        </main>
+        <br><br>
+        <footer>
+            Copyright &copy; 2021 petBAST<br>
+        </footer>
+    </body>
+</html>

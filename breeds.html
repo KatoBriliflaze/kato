@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <title>petBAST</title> 
+        <link rel="icon" href="paws.ico?v=2" type="image/x-icon">
+        <link rel = "stylesheet" href="breeds.css"> 
+    </head>
+    <body>
+        <header>
+            <a href="home.html"><img src="/images/petbastlogo.png" alt="petBast Logo" width="341" height="205"></a>       
+        </header>
+        <nav class="sticky">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li class="dropdown">
+                    <a class="active" href="breeds.html">Breeds</a>
+                    <div class="dropdownContent">
+                        <a href="cat.html">Cat Breeds</a>
+                        <a href="dog.html">Dog Breeds</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="catsordogs.html">Cats or Dogs</a>
+                    <div class="dropdownContent">
+                        <a href="learncats.html">Learn Cats</a>
+                        <a href="learndogs.html">Learn Dogs</a>
+                    </div>
+                </li>
+                <li><a href="adoption.html">Adoption</a></li>
+                <li><a href="shelters.html">Shelters</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <main>
+            <br>
+            <div>
+                <h2>How many cat breeds and dog breeds you can name?</h2>
+                <h4>There are many types of Cat and Dog Breeds. Click the picture below to know more about cat and dog breeds!</h4>
+
+                <table>
+                    <tr>
+                    <td><img class="imageclick" src=images/cat.jpg width="805" height="500" usemap="#cat" alt="Cat" ></td>
+                    <td><img class="imageclick" src=images/dog.jpg width="810" height="500" usemap="#dog" alt="Dog" ></td>
+                    </tr>
+                </table>
+
+
+                <map name="cat" id="cat">
+                    <area href="cat.html" shape="rect" coords="0,0,805,500" alt="Cat">
+                </map>
+
+                <map name="dog" id="dog">
+                    <area href="dog.html" shape="rect" coords="0,0,810,500" alt="Dog">
+                </map>
+            </div>
+        </main>
+        <br><br>
+        <footer>
+            Copyright &copy; 2021 petBAST<br>
+        </footer>
+    </body>
+</html>

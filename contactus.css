@@ -1,0 +1,177 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Tahoma, Verdana, sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    background-color: #fff;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-image: url(/images/backgroundpaw.jpeg);
+    background-repeat: repeat-y;
+}
+
+footer {
+    background-color: #333;
+    font-size: .8em; 
+    color: #fff;
+    text-align: center;
+    font-style: italic;
+    padding-bottom: 10px;
+    border-top: 2px solid #221811 ;
+    clear: both;
+}
+
+/*Navigation Bar*/
+.sticky { /*to make sure the navigation bar sticks on top*/
+	position: -webkit-sticky; /*For Mac users that use safari as web browser*/
+	position: sticky; 
+	top: 0;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    text-align: center;
+}
+
+nav li, nav li.dropdown {
+    flex: 1;
+    line-height: 30px;
+
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+nav li a:hover:not(.active), nav li.dropdown:hover:not(.active) {
+    background-color: #f77f00;
+}
+
+nav a.active {
+    background-color: #f77f00;
+}
+
+nav a:visited{
+    color: #e7cca7;
+}
+
+/*dropdown content*/
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px;
+    z-index: 1;
+}
+
+.dropdownContent a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdownContent a:hover {background-color: #333;}
+  
+.dropdown:hover .dropdownContent {
+    display: block;
+}
+
+/* Text Decoration*/
+#text {
+    text-align: center;
+    font-size: 3em;
+    text-shadow: 2px 2px 2px /*shadow effect*/
+}
+
+h3 {
+    color: #f77f00;
+    font-size: 2.5em;
+    text-align: left;
+}
+
+.picture {
+    width: 40%;
+    box-shadow: 5px 5px 5px #ccc;
+    border-radius: 5px;
+    float: right;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*button that has links*/
+.button1 {
+    background-color:#ff0000; 
+    color: whitesmoke; 
+    border: 2px solid #ff0000;
+    border-radius: 8px;
+    width: 120px;
+    font-size: 16px;
+    padding: 10px 5px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    text-align: center;
+}
+  
+.button1:hover {
+    background-color: green;
+    color: white;
+    border: 2px solid #ffffff
+}
+
+/*Contact Form Design*/
+input[type=text], [type =email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.formbox {
+border-radius: 5px;
+background-color: #f2f2f2;
+padding: 20px;
+}
+
+/*THANK YOU Link text Decoration*/
+h1 {
+    color: #f77f00;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*center pictures and add shadow effect*/
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    box-shadow: 10px 10px 5px #ccc
+}

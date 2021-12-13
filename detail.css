@@ -1,0 +1,188 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Tahoma, Verdana, sans-serif;
+} 
+
+header {
+  text-align: center;
+}
+
+main {
+  background-color: #fff;
+  padding-right: 15px;
+  padding-left: 15px;
+  background-image: url(/images/backgroundpaw.jpeg);
+  background-repeat: repeat-y;
+}
+
+footer {
+  background-color: #333;
+  font-size: .8em; 
+  color: #fff;
+  text-align: center;
+  font-style: italic;
+  padding-bottom: 10px;
+  border-top: 2px solid #221811 ;
+  clear: both;
+}
+
+/*Navigation Bar*/
+.sticky { /*to make sure the navigation bar sticks on top*/
+  position: -webkit-sticky; /*For Mac users that use safari as web browser*/
+  position: sticky; 
+  top: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  text-align: center;
+}
+
+nav li, nav li.dropdown {
+  flex: 1;
+  line-height: 30px;
+
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover:not(.active), nav li.dropdown:hover:not(.active) {
+  background-color: #f77f00;
+}
+
+nav a.active {
+  background-color: #f77f00;
+}
+
+nav a:visited{
+  color: #e7cca7;
+}
+
+/*dropdown content*/
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px;
+  z-index: 1;
+}
+
+.dropdownContent a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdownContent a:hover {background-color: #333;}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+
+/*Page Content Design*/
+
+a {
+    color: black;
+}
+
+.petInfoWrapper {                                         
+    position: relative; /* Contains the image in the div */
+}
+.petInfo { /* Aligns image vertically */
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.petInfoWrapper p { /* Pushes text to edge of image */
+    margin-left: 150px; 
+    font-size: 80%;
+
+}
+.petInfo { 
+    width: 250px; /* Width of image */
+    max-height: 100%; /* Sizing - resizes down to avoid cutting off */
+    max-width: 100%;
+}
+
+/* Decoration */
+.petInfoWrapper {  
+  padding: 50px;
+  padding-left: 20px;
+  padding-right: 20px; 
+  text-align: left;      
+  border-radius: 10px;
+  margin: 2em;
+  margin-left: 3em;
+  margin-right: 3em;
+  outline: 1px solid;
+  background-color: #FFF1E6;
+  box-shadow: 3px 3px ;
+  position:relative;
+}
+
+.petInfoWrapper p { 
+    margin-top: 0.2em;
+    margin-bottom: 0.2em; 
+    padding-left: 12em;
+    font-size: 18px;
+    white-space: pre;
+}
+
+.moreInfo {
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px; 
+  text-align: left;      
+  border-radius: 10px;
+  margin: 2em;
+  margin-left: 3em;
+  margin-right: 3em;
+  outline: 1px solid grey;
+  background-color: #F5F5F5;
+  position:relative;
+}
+    
+
+.related{
+  padding-top: 3px; 
+  text-align: left;   
+  margin: 3em;
+  margin-left: 2em;
+  margin-right: 2em; 
+  background-color: white;
+}   
+
+
+.items img{
+  width: 200px;
+  height: 200px;
+  
+}
+
+.row{
+  margin: auto;
+  display : flex;
+  justify-content :space-evenly
+}

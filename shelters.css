@@ -1,0 +1,178 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Tahoma, Verdana, sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    background-color: #fff;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-image: url(/images/backgroundpaw.jpeg);
+    background-repeat: repeat-y;
+}
+
+footer {
+    background-color: #333;
+    font-size: .8em; 
+    color: #fff;
+    text-align: center;
+    font-style: italic;
+    padding-bottom: 10px;
+    border-top: 2px solid #221811 ;
+    clear: both;
+}
+
+/*Navigation Bar*/
+.sticky { /*to make sure the navigation bar sticks on top*/
+	position: -webkit-sticky; /*For Mac users that use safari as web browser*/
+	position: sticky; 
+	top: 0;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    text-align: center;
+}
+
+nav li, nav li.dropdown {
+    flex: 1;
+    line-height: 30px;
+
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+nav li a:hover:not(.active), nav li.dropdown:hover:not(.active) {
+    background-color: #f77f00;
+}
+
+nav a.active {
+    background-color: #f77f00;
+}
+
+nav a:visited{
+    color: #e7cca7;
+}
+
+/*dropdown content*/
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px;
+    z-index: 1;
+}
+
+.dropdownContent a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdownContent a:hover {background-color: #333;}
+  
+.dropdown:hover .dropdownContent {
+    display: block;
+}
+
+/* Page Main Banner*/
+#catdogbanner1 {
+    background-image: url("/images/shelters/catdog\ banner\ 1.jpg");
+    background-size: 100% 100%;
+    height: 280px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 2em;
+}
+
+/*Wordings Alignment*/ 
+.alignLEFT {
+    font-size: 1.5em;
+    text-align: left;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+/* All Image Padding*/
+
+.shelterspic {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+table {
+    width: 80%;
+    margin-left: auto; /*center page*/
+    margin-right: auto; /*center page*/
+    border-collapse: collapse;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #ccc ;/*shadow effect*/
+    background-color: blanchedalmond;
+    overflow: hidden; /*make sure everything in the box*/
+}
+
+td {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+table img {
+    width: auto;
+    max-width: 200px; /*max,min width are to restrict the pictures being too 'long' and to align all pictures for better looking*/  
+    min-width: 200px;
+    min-height: auto;
+    height: auto;
+    display: block;
+    padding: 10%;
+}
+
+
+/*Button Links*/
+.button1 {
+    background-color:#ff0000; 
+    color: whitesmoke; 
+    border: 2px solid #ff0000;
+    border-radius: 8px;
+    width: 120px;
+    font-size: 16px;
+    padding: 14px 40px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    text-align: center;
+}
+  
+.button1:hover {
+    background-color: #fff;
+    color: black;
+}
+

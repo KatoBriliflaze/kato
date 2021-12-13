@@ -1,0 +1,205 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Tahoma, Verdana, sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    background-color: #fff;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-image: url(/images/backgroundpaw.jpeg);
+    background-repeat: repeat-y;
+}
+
+/*Navigation Bar*/
+.sticky { /*to make sure the navigation bar sticks on top*/
+	position: -webkit-sticky; /*For Mac users that use safari as web browser*/
+	position: sticky; 
+	top: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    text-align: center;
+}
+
+nav li, nav li.dropdown {
+    flex: 1;
+    line-height: 30px;
+
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+nav li a:hover:not(.active), nav li.dropdown:hover:not(.active) {
+    background-color: #f77f00;
+}
+
+nav a.active {
+    background-color: #f77f00;
+}
+
+nav a:visited{
+    color: #e7cca7;
+}
+
+/*dropdown content*/
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px;
+    z-index: 1;
+}
+
+.dropdownContent a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdownContent a:hover {background-color: #333;}
+  
+.dropdown:hover .dropdownContent {
+    display: block;
+}
+
+/*Page Content Design*/
+a {
+    color: blue;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+details {    
+    padding: 15px; 
+    padding-left: 20px;
+    padding-right: 20px; 
+    text-align: left;    
+    outline: none;     
+    border-radius: 10px;
+    margin: 2em;
+    margin-left: 3em;
+    margin-right: 3em;
+    outline: 1px solid;
+    position: relative;
+    background-color: #FFF1E6;
+    box-shadow: 3px 3px 
+}    
+
+details a {
+    color: blue;
+}
+
+details a:visited {
+    color: red;
+}
+
+.text {
+    color: black;
+    font-size: 20px;
+}
+
+.petInfoWrapper {
+    position: relative; /* Contains the image in the div */
+}
+.petInfo { /* Aligns image vertically */
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+.petInfoWrapper p { 
+    margin-left: 241px; /* Width of image */
+}
+.petInfo { 
+    width: 201px; /* Width of image */  
+}
+
+
+.petInfo {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+/* Decoration */
+.petInfoWrapper { 
+    border-radius: 10px;
+    margin: 2em;
+    margin-left: 3em;
+    margin-right: 3em;
+    padding: 15px;
+    outline: 1px solid;
+    display: inline-block; 
+    position: relative;
+    background-color: #FFF1E6;
+    box-shadow: 3px 3px ;
+    height: 300px;
+    width: 500px;
+}
+
+.petInfoWrapper p { 
+    margin-top: 3em;
+    margin-bottom: 3em; 
+    padding-left: 3em;
+    
+}
+
+.petInfoWrapper a {
+    color: blue;
+}
+
+.petInfoWrapper a:visited{
+    color: red;
+}
+
+.pages a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pages a.active {
+    background-color: #f77f00;
+}
+
+.pages a:hover:not(.active) {background-color: #ddd;}
+
+.center {
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    font-size: .8em; 
+    color: #fff;
+    text-align: center;
+    font-style: italic;
+    padding-bottom: 10px;
+    border-top: 2px solid #221811 ;
+    clear: both;
+}
